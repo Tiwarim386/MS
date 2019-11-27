@@ -1,0 +1,25 @@
+<div class="contar">
+				
+				<table class="container">
+	<thead>
+		<tr>
+			<th>Guest Name</th>
+			<th>Guest Contact</th>
+			<th>Host Name</th>
+			<th>Host Contact</th>
+			<th>Check-In Time</th>
+			<th>Check-Out Time</th>
+		</tr>
+	</thead>
+	<tbody ng-repeat="entry in logentries " >
+		<tr>
+			<td>{{ entry.guestname }}</td>
+			<td>{{ entry.guestphone }}</td>
+			<td>{{ entry.hostname}}</td>
+			<td>{{ entry.hostphone}}</td>
+			<td>{{ entry.Checkin_time}}</td>
+			<td>{{ entry.Checkout_time}}</td>
+		</tr>
+	</tbody>
+</table>
+</div>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html ng-app="ems">
+<head>
+<title>EMS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+ <link rel="stylesheet" href="./public/stylesheets/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="./public/javascripts/angular.min.js"></script>
+<script src="./public/javascripts/angular-route.min.js"></script>
+<script type="text/javascript" src="./public/javascripts/angularapp.js"></script>
+<style>
+  @media screen and (max-width: 1100px)
+  {
+    .v1
+    {
+      display: none;
+    }
+  }
+</style>
+</head>
+<body ng-controller="emscontrol">
+     <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                  <h3 style="color: white; ">Entry Management System</h3>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>                     
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+     <li><a href="#/">Home</a></li>
+     <li><a href="#/logbook"><span class="glyphicon glyphicon-list-alt"></span> Log Book</a></li>
+                   </ul>     
+                </div>
+            </div>
+        </nav>
+        <div class="col-xs-8 col-xs-offset-2" style="padding-top: 80px;">
+      <hr>
+      <div class="ng-view"></div>
+    </div>
+<footer>
+<p align="center"> Copyright © Entry Management System.All Rights
+                Reserved by the Company <br> </p>
+    </footer>
+</body>
+</html>
